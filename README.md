@@ -1,5 +1,3 @@
-# Use https://hub.docker.com/r/linuxserver/wireshark instead.
-
 > **Note**
 >
 > This is a fork version that support multi-platform image mainly for Apple Silicon.
