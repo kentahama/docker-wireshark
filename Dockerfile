@@ -1,7 +1,7 @@
-FROM ffeldhaus/xpra-html5-minimal
+FROM ghcr.io/lambdalisue/xpra-html5-minimal
 
-LABEL version="1.0"
-LABEL maintainer="florian.feldhaus@gmail.com"
+LABEL org.opencontainers.image.url https://github.com/users/lambdalisue/packages/container/package/wireshark
+LABEL org.opencontainers.image.source https://github.com/lambdalisue/docker-wireshark
 
 # skip interactive configuration dialogs
 ENV DEBIAN_FRONTEND noninteractive
