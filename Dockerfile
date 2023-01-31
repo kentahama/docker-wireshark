@@ -6,6 +6,11 @@ LABEL org.opencontainers.image.source https://github.com/lambdalisue/docker-wire
 # skip interactive configuration dialogs
 ENV DEBIAN_FRONTEND noninteractive
 
+# add ppa for latest wireshark
+RUN apt-get update && \ 
+    apt-get install -y software-properties-common && \
+    add-apt-repository ppa:wireshark-dev/stable
+
 # add winswitch repository and install Xpra
 RUN apt-get update && \
     apt-get install -y wireshark && \
